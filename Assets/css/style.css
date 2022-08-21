@@ -1,0 +1,176 @@
+:root {
+    --dark: rgb(52, 53, 54);
+    --light: rgb(177, 201, 206);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+header {
+    padding: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: var(--dark);
+    color: whitesmoke;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 4rem;
+}
+
+header nav {
+    padding-top: 1.5rem;
+    margin-right: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    float: right;
+}
+
+header nav a {
+    display: inline-block;
+    margin-left: 3rem;
+    color: whitesmoke;
+    text-decoration-color: var(--light);
+}
+
+.hero {
+    height: 200px;
+    width: 100%;
+    border-bottom: 3px solid var(--dark);
+    margin-bottom: 1rem;
+    background-image: url("../images/bg-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.section-card {
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 30px;
+    min-height: 250px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--dark);
+    color: whitesmoke;
+    border-radius: 20px;
+}
+
+.section-card img {
+    max-height: 190px;
+    border-style: solid;
+    border-color: var(--light);
+    border-radius: 10px;
+    float: left;
+    margin-right: 2rem;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.projects-sub {
+    margin: auto;
+    margin-bottom: 1rem;
+    width: 70%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--light);
+    color: whitesmoke;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+#project-1 {
+    width: 100%;
+    height: 350px;
+    padding: 2%;
+}
+
+.project-text-h3 {
+    position: relative;
+    left: 0px;
+    bottom: 55px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: var(--dark);
+    color: whitesmoke;
+    width: fit-content;
+    max-width: 80%;
+}
+
+.project-text-p {
+    position: relative;
+    left: 0px;
+    bottom: 55px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: var(--dark);
+    color: whitesmoke;
+    width: fit-content;
+    max-width: 80%;
+}
+
+#project-1 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-style: solid;
+    border-color: var(--dark);
+    border-radius: 5px;
+}
+
+.projects-2-5 {
+    width: 50%;
+    height: 175px;
+}
+
+.left-card {
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+}
+
+.right-card {
+    padding-right: 2%;
+    padding-bottom: 2%;
+}
+
+.projects-2-5 > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-style: solid;
+    border-color: var(--dark);
+    border-radius: 5px;
+}
+
+#contact {
+    min-height: 200px;
+}
+
+#contact ul {
+    margin-left: 2%;
+    list-style: circle;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+footer {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: var(--dark);
+    color: whitesmoke;
+}
