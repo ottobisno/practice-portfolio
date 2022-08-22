@@ -1,22 +1,18 @@
-/* Defining variables for commonly used colors */
 :root {
     --dark: rgb(52, 53, 54);
     --light: rgb(177, 201, 206);
 }
 
-/* Getting rid of any unwanted default margins and padding */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-/* Defining general background color */
 body {
     background-color: whitesmoke;
 }
 
-/* Specs for header of the page */
 header {
     padding: 2rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -24,13 +20,11 @@ header {
     color: whitesmoke;
 }
 
-/* Specs for my name in the header */
 header h1 {
     display: inline-block;
     font-size: 4rem;
 }
 
-/* Adjusting spacing and positioning of nav links in header */
 header nav {
     padding-top: 1.5rem;
     margin-right: 2rem;
@@ -39,14 +33,13 @@ header nav {
     float: right;
 }
 
-/* Changing additional specs for nav links in header */
 header nav a {
     display: inline-block;
     margin-left: 3rem;
     color: whitesmoke;
     text-decoration-color: var(--light);
 }
-/* Adding in a background image to fill space between the header and main page */
+
 .hero {
     height: 200px;
     width: 100%;
@@ -58,7 +51,6 @@ header nav a {
     background-position: center;
 }
 
-/* Defning the general specs for the sections used for "about me," "projects," and contact */
 .section-card {
     margin-bottom: 1rem;
     margin-left: 1rem;
@@ -71,7 +63,6 @@ header nav a {
     border-radius: 20px;
 }
 
-/* Defining the size and position of the images in the "about me" and "projects" sections */
 .section-card img {
     max-height: 190px;
     border-style: solid;
@@ -81,13 +72,11 @@ header nav a {
     margin-right: 2rem;
 }
 
-/*  Font size and marrgins for headings in main body sections */
 h2 {
     font-size: 3rem;
     margin-bottom: 1rem;
 }
 
-/* Defining the specs for the section contaiing links to my projects */
 .projects-sub {
     margin: auto;
     margin-bottom: 1rem;
@@ -103,14 +92,12 @@ h2 {
 
 }
 
-/* Defining the size of the card for my primary project */
 #project-1 {
     width: 100%;
     height: 350px;
     padding: 2%;
 }
 
-/* Specs for project titles */
 .project-text-h3 {
     position: relative;
     left: 0px;
@@ -123,7 +110,6 @@ h2 {
     max-width: 80%;
 }
 
-/* Specs for project subtitles/featured skills */
 .project-text-p {
     position: relative;
     left: 0px;
@@ -136,7 +122,6 @@ h2 {
     max-width: 80%;
 }
 
-/* Specs for image for primary project */
 #project-1 img {
     height: 100%;
     width: 100%;
@@ -146,39 +131,23 @@ h2 {
     border-radius: 5px;
 }
 
-/* Adding a glow when hovering over project cards */
-#project-1 img:hover,
-.projects-2-5 img:hover {
-    box-shadow: inset 0px 0px 8px rgb(0, 0, 0), 0 0 15px rgb(0, 0, 0);
-}
-
-/* Adding a greyscale effect for when activating project cards */
-#project-1 img:active,
-.projects-2-5 img:active {
-    filter: grayscale(40%);
-}
-
-/* Defining the size of the card for my secondary project */
 .projects-2-5 {
     width: 50%;
     height: 175px;
 }
 
-/* Specific padding instructions for secondary project cards in left column */
 .left-card {
     padding-left: 2%;
     padding-right: 2%;
     padding-bottom: 2%;
 }
 
-/* Specific padding instructions for secondary project cards in right column */
 .right-card {
     padding-right: 2%;
     padding-bottom: 2%;
 }
 
-/* Specs for images for secondary projects */
-.projects-2-5 img {
+.projects-2-5 > img {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -187,58 +156,21 @@ h2 {
     border-radius: 5px;
 }
 
-/* Defining the height of the "contact" section at the bottom of the page */
 #contact {
     min-height: 200px;
 }
 
-/* Organizing my list of contact options */
 #contact ul {
     margin-left: 2%;
     list-style: circle;
 }
 
-/* Bolding the text for each contact option category */
 .bold {
     font-weight: bolder;
 }
 
-/* Adjusting behavior of the header and project card subtitles to accommodate a tablet-sized screen */
-@media screen and (max-width: 992px) {
-    header {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .project-text-h3 {
-        font-size: 1.9vw;
-    }
-
-    .project-text-p {
-        font-size: 1.7vw;
-    }
-}
-
-/* Adjusting behavior of secondary project cards to accommodate a mobile-sized screen */
-@media screen and (max-width: 768px) {
-    .projects-2-5 {
-        width: 100%;
-        height: 175px;
-    }
-
-    .right-card,
-    .left-card {
-        padding-left: 2%;
-        padding-right: 2%;
-        padding-bottom: 2%;
-    }
-
-    .project-text-h3 {
-        font-size: 14.5px;
-    }
-
-    .project-text-p {
-        font-size: 13px;
-    }
+footer {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: var(--dark);
+    color: whitesmoke;
 }
